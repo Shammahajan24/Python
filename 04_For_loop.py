@@ -29,4 +29,5 @@ my_num=input("Enter the number")
 num=0
 for i in my_num:
     num=num+(int(i))**len(my_num)
-print(num)    
+print(num)
+
