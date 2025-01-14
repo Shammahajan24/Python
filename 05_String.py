@@ -22,4 +22,10 @@ for i in str:
         Output_str=Output_str+i    
 print(Output_str)      
 
-
+# first three characters and last three charactares
+a=input("Enter the string:")
+if len(a)<6:
+    print("String is invalid!!")
+else:
+    print(a[:3]+a[len(a)-3:len(a):1])
+    
