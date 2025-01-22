@@ -36,15 +36,29 @@
 # else:
 #     print("Spealling thik kar ke aa")    
 # increasing order decreasing oreder for eg 567=increasing order but 398=unorderd
-a=int(input("First Number:"))
-b=int(input("Second Number:"))
-c=int(input("Third Number:"))
-if b-a==1 and c-b==1:
-    print("increasing order")
-elif a-b==1 and b-c==1:
-    print("Decreasing order")
-elif  b-a==c-b:
-    print("Ordered but not consecative")    
-else:
-    print("Unordered")    
+# a=int(input("First Number:"))
+# b=int(input("Second Number:"))
+# c=int(input("Third Number:"))
+# if b-a==1 and c-b==1:
+#     print("increasing order")
+# elif a-b==1 and b-c==1:
+#     print("Decreasing order")
+# elif  b-a==c-b:
+#     print("Ordered but not consecative")    
+# else:
+#     print("Unordered")    
    
+
+
+
+a=12
+b=18
+c=45
+
+if a>0 and b>0 and c>0:
+   if (a+b+c)==180:
+     print("valid")
+   else:
+     print("invalid")
+else:
+   print("invalid")        
