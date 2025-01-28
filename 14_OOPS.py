@@ -19,12 +19,36 @@ class Factorial:
     def __init__(self,inp):
         self.inp=inp
 
-    def factii(self,n=None):
-        n=self.inp
-        if n==0 or n==1:
-            print(1)
-        return n * self.factii(n-1)    
+    def factii(self):
+        out=1
+        if self.inp==0 or self.inp==1:
+            return 1
+        else:
+            for i in range(1,self.inp+1):
+                out=i*out
+            return out    
 
-inp==int(input("Enter the number"))
+
+inp=int(input("Enter the number"))
 fact=Factorial(inp)        
 print(fact.factii())
+
+
+
+class Factorial_2:
+    def __init__(self, num):
+        self.num = num
+    
+    def calculate(self, n=None):
+        if n is None:
+            n = self.num
+        
+        if n == 0 or n == 1:
+            return 1
+        else:
+            return n * self.calculate(n - 1)
+
+# Example usage
+num = 5
+fact = Factorial(num)
+print(f"Factorial of {num} is: {fact.calculate()}")
